@@ -238,19 +238,19 @@
 		color: #fff;
 		@include mq(small) {
 			height: 50px;
-			top: 0px;
+			top: 1px;
 			font-size: em(20px);
 			font-weight: bold;
 		}
 		@include mq(medium) {
 			width: 40px;
-			top: 0px;
+			top: -1px;
 			font-size: em(12px);
 			font-weight: bold;
 		}
 		@include mq(large) {
 			width: 35px;
-			top: 0px;
+			top: -1px;
 		}
   }
 }
