@@ -1,0 +1,112 @@
+// ==========================================================================
+// Placeholders
+// ==========================================================================
+
+// Nav Items
+
+// Horizontaly display nav items
+%nav-item-horz {
+  @include mq(medium) {
+    display: inline-block;
+    margin: 0 em(10px);
+  }
+  @include mq(large) {
+    display: inline-block;
+    margin: 0 em(10px);
+  }
+}
+
+// Nav items
+%nav-item-link {
+  display: block;
+  text-align: center;
+  font-size: em(16px);
+  font-weight: $font-weight--medium;
+  letter-spacing: 4px;
+  border-bottom: 1px solid transparent;
+  padding: em(3px, 18px);
+  @include mq(small) {
+    border-bottom-color: palette(grey, xx-light);
+    padding-top: em(14px, 18px);
+    padding-bottom: em(14px, 18px);
+  }
+  @include mq(medium) {
+    padding-top: em(10px, 18px);
+    padding-bottom: em(4px, 18px);
+  }
+  @include mq(large) {
+    font-size: em(14px);
+    letter-spacing: $letter-space-md;
+    padding: em(16px, 18px);
+    margin-bottom: em(15px);
+  }
+}
+
+// Nav items on hover
+%nav-item-on {
+  color: palette(black);
+  border-color: $color-primary;
+}
+
+// Headlines
+
+%hdln-prim {
+  font-size: em(28px);
+  letter-spacing: 5px;
+}
+
+%hdln-sec {
+  color: palette(black, light);
+  letter-spacing: $letter-space-lg;
+  text-transform: uppercase;
+  font-weight: $font-weight--light;
+  font-size: em(20px);
+  margin-top: em(20px);
+}
+
+// Buttons
+
+%btn {
+  padding: 7px 30px;
+  border: 0;
+  border-radius : $br--default;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size : em(13px);
+  font-weight: $font-weight--bold;
+  transition: opacity $trns-duration;
+  display: block;
+  &:hover {
+    opacity: .75;
+  }
+  &:active {
+    opacity: initial;
+  }
+}
+
+// Icons
+
+%icn--ui {
+	line-height: 0;
+	cursor: pointer;
+}
+
+// Input Placeholders
+
+%placeholder {
+  font-family: Lato;
+  font-size: em(13px);
+  font-style: italic;
+  font-weight: $font-weight--bold;
+  letter-spacing: $letter-space-sm;
+  padding-left: 0;
+  position: relative;
+  top: -1px;
+  color: palette(grey, light);
+  @include mq(small) {
+    font-size: em(17px);
+    font-weight: $font-weight--bold;
+    color: palette(grey);
+  }
+}

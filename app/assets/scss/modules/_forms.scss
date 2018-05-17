@@ -1,0 +1,256 @@
+// ==========================================================================
+// Form Elements
+// ==========================================================================
+
+// Main form
+.form {
+
+	// Form title
+	@include e(headline) {
+		padding-bottom: em(2px);
+		border-bottom: 2px solid rgba(150, 150, 150, 0.2);
+		@include mq(small) {
+			font-size: em(21px);
+			letter-spacing: 9px;
+			font-weight: 900;
+			margin-bottom: 1em;
+		}
+		@include mq(medium) {
+			border-bottom: 1px solid rgba(150, 150, 150, 0.2);
+			padding-bottom: 0.5em;
+		}
+		@include mq(large) {
+			border-bottom: 1px solid rgba(150, 150, 150, 0.2);
+			padding-bottom: 0.7em;
+		}
+	}
+
+	// Labels
+	@include e(label) {
+		display: block;
+		font-size: em(10px);
+		font-weight: $font-weight--bold;
+		letter-spacing: 1.5px;
+		text-transform: uppercase;
+		padding-top: em(12px);
+		margin-bottom: em(16px);
+		@include mq(small) {
+			font-size: em(16px);
+		}
+	}
+
+	// Inputs
+	@include e(input) {
+		font-size: em(14px);
+		font-weight: $font-weight--light;
+		padding: 10px;
+		margin-bottom: em(20px, 18px);
+		margin-top: em(5px);
+		border: 1px solid palette(grey, x-light);
+		color: palette(black, dark);
+		@include mq(small) {
+			margin-bottom: em(10px, 18px);
+			margin-top: em(5px);
+		}
+		@include mq(medium) {
+			padding: em(6px);
+		}
+		@include mq(large) {
+			padding: em(5px);
+		}
+		&:focus {
+			border-color: $color-primary;
+		}
+	}
+
+	// Radio buttons
+	@include e(radio-button) {
+		display: inline-block;
+		-webkit-appearance: none;
+		content: '';
+		width: 15px;
+		height: 15px;
+		background-color: #fff;
+		border: 1px solid $color-secondary;
+		border-radius: 50%;
+		outline: 0px;
+
+		&:checked {
+			background-color: #000;
+
+			&:after {
+				content: '';
+				background-color: #fff;
+				height: 40%;
+				width: 40%;
+				display: block;
+				margin: 30%;
+				border-radius: 50%;
+			}
+		}
+	}
+
+  // Radio Labels
+	@include e(radio-label) {
+		position: relative;
+		top: em(-5px);
+		display: inline-block;
+		font-size: em(12px);
+		padding-left: em(16px);
+		padding-top: em(0px);
+	}
+
+	// Form info
+	@include e(info) {
+		display: block;
+		font-size: em(12px);
+		font-weight: $font-weight--light;
+		padding-left: em(40px);
+		padding-top: em(0px);
+		margin-top: - em(10px);
+		margin-bottom: em(30px);
+	}
+
+  // Submit button
+	@include e(btn) {
+		@extend %btn;
+		background: $color-primary;
+		@include mq(small) {
+			padding: 0.7rem;
+			font-size: em(16px);
+			font-weight: $font-weight--bold;
+			letter-spacing: $letter-space-md;
+		}
+		@include mq(medium) {
+			font-size: em(12px);
+			font-weight: $font-weight--medium;
+		}
+		@include mq(large) {
+		}
+	}
+}
+
+// Newsletter form
+
+.newsletter-form {
+	text-align: center;
+	margin: 0 auto;
+
+  // Form title
+	@include e(title) {
+    margin-bottom: em(16px);
+		@include mq(small) {
+			font-size: em(17px);
+			text-align: center;
+			letter-spacing: $letter-space-lg;
+			margin-bottom: em(7px);
+		}
+		@include mq(medium) {
+			font-size: em(11px);
+			text-align: center;
+			letter-spacing: $letter-space-md;
+			margin-bottom: em(25px);
+		}
+		@include mq(large) {
+			font-size: em(10px);
+			text-align: right;
+			margin-top: em(25px);
+			margin-bottom: em(15px);
+		}
+  }
+
+  // Form group
+	@include e(form-group) {
+		width: 250px;
+		height: 35px;
+		margin-left: auto;
+		@include mq(small) {
+			text-align: center;
+			width: 380px;
+			height: 50px;
+			margin: 0 auto;
+			margin-bottom: em(20px);
+		}
+		@include mq(medium) {
+			width: 366px;
+			height: 50px;
+			text-align: center;
+			margin: 0 auto;
+		}
+		@include mq(large) {
+			width: 220px;
+			height: 40px;
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+
+  // Input
+  @include e(input) {
+		display: inline-block;
+		height: 35px;
+		width: 196px;
+		border: none;
+		border: 1px solid grey;
+		border-radius: $br--default 0 0 $br--default;
+		outline: none;
+		@include mq(small) {
+	    width: 316px;
+	    height: 50px;
+			&::placeholder {
+				font-size: 22px;
+				font-weight: 400;
+				padding-left: em(15px);
+				color: palette(grey, light);
+			}
+		}
+		@include mq(medium) {
+			width: 210px;
+			padding-bottom: em(7px);
+			padding-left: em(10px);
+			&::placeholder {
+				font-size: 10px;
+				font-weight: 400;
+				color: palette(grey);
+			}
+		}
+		@include mq(large) {
+			width: 185px;
+		}
+    &::placeholder {
+      @extend %placeholder;
+    }
+  }
+
+  // Submit button
+  @include e(btn) {
+		display: inline-block;
+		position: relative;
+		top: 0px;
+		width: 60px;
+		height: 35px;
+		text-align: center;
+		font-weight: 400;
+		border-radius: 0 $br--default $br--default 0;
+		border: none;
+		outline: none;
+		margin-left: -.3rem;
+		color: #fff;
+		@include mq(small) {
+			height: 50px;
+			top: 1px;
+			font-size: em(20px);
+			font-weight: bold;
+		}
+		@include mq(medium) {
+			width: 40px;
+			top: -2px;
+			font-size: em(12px);
+			font-weight: bold;
+		}
+		@include mq(large) {
+			width: 35px;
+			top: -1px;
+		}
+  }
+}

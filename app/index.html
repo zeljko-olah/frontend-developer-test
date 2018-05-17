@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fashion site for amazing ladies">
+    <meta name="keywords" content="Fasion, Woman, Boutique">
+    <meta name="author" content="Zeljko Olah">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Test</title>
+    <!-- build:css assets/styles/styles.css -->
+    <link rel="stylesheet" href="temp/styles/styles.css" type="text/css">
+    <!-- endbuild -->
+
+    <!-- build:js assets/scripts/Vendor.js -->
+    <script src="/temp/scripts/Vendor.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <header class="header" role="banner">
+      <div class="grid--fullwidth">
+        <div class="grid__col--12 panel--sm-padded">
+
+            <!-- ACCOUNT BAR -->
+            <div class="account-bar">
+              <a href="#" class="account-bar__item">Log in</a>
+              <a href="#" class="account-bar__item">Contact</a>
+            </div>
+
+            <!-- SITE LOGO -->
+            <a class="site-logo" href="/">
+              <h1 class="site-logo__headline">This is site logo</h1>
+              <b class="srt">Job Test Site</b>
+            </a>
+
+            <!-- NAVIGATION -->
+            <nav class="navbar" role="navigation">
+              <span id="toggle" class="icn--nav-toggle is-displayed-mobile" aria-pressed="false">
+                <b class="srt">Toggle</b>
+              </span>
+              <ul class="nav is-collapsed-mobile">
+                <li class="nav__item"><a href="#">New</a></li>
+                <li class="nav__item"><a href="#">Women</a></li>
+                <li class="nav__item"><a href="#">Kids</a></li>
+                <li class="nav__item"><a href="#">Lookbook</a></li>
+                <li class="nav__item"><a href="#">Boutiques</a></li>
+                <li class="nav__item"><a href="#">Love Life</a></li>
+                <li class="nav__item--current"><a href="#">Promotions</a></li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+    </header><!-- END HEADER -->
+
+    <!-- HERO SECTION -->
+    <div class="grid--fullwidth">
+        <div class="grid__col--12">
+          <section class="hero" role="heading">
+            <div class="hero__callout flex flex--column flex--center">
+              <h1 class="hero__headline">Lorem Ipsum</h1>
+              <p class="hero__subtitle">summer 17-18</p>
+              <p class="hero__description">Lorem ipsum dolor sit amet</p>
+            </div>
+          </section>
+        </div>
+    </div> <!-- END HERO SECTION -->
+
+    <!-- PRODUCTS SECTION -->
+    <div class="grid">
+      <section class="products" role="presentation">
+        <h2 class="products__headline">Products</h2>
+        <div class="grid__col-sm--4 grid__col-md--4 grid__col--4">
+          <div class="products-item">
+            <img class="img" src="assets/images/product-1.jpg" alt="sample image">
+            <h3 class="products__title">Trensh Coat</h3>
+            <div class="products__price-container">
+              <span class="products__price products__old-price">95,99 &euro;</span>
+              <span class="products__price products__new-price">85,99 &euro;</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid__col-sm--4 grid__col-md--4 grid__col--4">
+          <div class="products-item">
+            <img class="img" src="assets/images/product-2.jpg" alt="sample image">
+            <h3 class="products__title">Duffle Coat</h3>
+            <div class="products__price-container">
+              <span class="products__price products__old-price">55,99 &euro;</span>
+              <span class="products__price products__new-price">45,99 &euro;</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid__col-sm--4 grid__col-md--4 grid__col--4">
+          <div class="products-item">
+            <img class="img" src="assets/images/product-3.jpg" alt="sample image">
+            <h3 class="products__title">Duffle Coat</h3>
+            <div class="products__price-container">
+              <span class="products__price products__old-price">55,99 &euro;</span>
+              <span class="products__price products__new-price">45,99 &euro;</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div><!-- END PRODUCTS SECTION -->
+
+    <!-- ARTICLE SECTION -->
+    <div class="grid">
+      <div class="grid__col--12">
+        <section class="article" role="contentinfo">
+          <article>
+            <h2 class="article__headline">This is a Title</h2>
+            <p class="article__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <ul class="article__list">
+              <li>At vero eos et accusamus et iusto odio dignissimos</li>
+              <li>Nam libero tempore, cum solute nobis est eligendi</li>
+              <li>Nemo enim ipsaam volupttem quia voluptas</li>
+              <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</li>
+              <li>Lorem ipsum dolor sit amet</li>
+            </ul>
+
+            <p class="article__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </article>
+        </section>
+      </div>
+    </div><!-- END ARTICLE SECTION -->
+
+    <!-- MORE PRODUCTS SECTION --- SLIDER -->
+    <div class="grid">
+      <section class="grid--fullwidth slider" role="slider">
+        <h2 class="slider__title">More Products</h2>
+        <div class="slider__carousel-wrapper">
+          <div class="slider__image-carousel">
+            <div class="inner">
+              <div class="slides-wrap">
+                <div class="image-wrapper">
+                  <img class="lazyload" sizes="220px" data-srcset="assets/images/slider-2.jpg 220w" alt="slider-2 image">
+                </div>
+                <h3 class="slides-title">Grey Coat</h3>
+              </div>
+              <div class="slides-wrap">
+                <div class="image-wrapper">
+                  <img class="lazyload" sizes="220px" data-srcset="assets/images/slider-3.jpg 220w" alt="slider-3 image">
+                </div>
+                <h3 class="slides-title">Red Coat</h3>
+              </div>
+              <div class="slides-wrap">
+                <div class="image-wrapper">
+                  <img class="lazyload" sizes="220px" data-srcset="assets/images/slider-1.jpg 220w" alt="slider-1 image">
+                </div>
+                <h3 class="slides-title">Beige Coat</h3>
+              </div>
+              <div class="slides-wrap">
+                <div class="image-wrapper">
+                  <img class="lazyload" sizes="220px" data-srcset="assets/images/slider-4.jpg 220w" alt="slider-4 image">
+                </div>
+                <h3 class="slides-title">Grey Coat</h3>
+              </div>
+              <div class="slides-wrap">
+                <div class="image-wrapper">
+                  <img class="lazyload" sizes="220px" data-srcset="assets/images/slider-2.jpg 220w" alt="slider-2 image">
+                </div>
+                <h3 class="slides-title">Grey Coat</h3>
+              </div>
+              <div class="slides-wrap">
+                <div class="image-wrapper">
+                  <img class="lazyload" sizes="220px" data-srcset="assets/images/slider-3.jpg 220w" alt="slider-3 image">
+                </div>
+                <h3 class="slides-title">Red Coat</h3>
+              </div>
+              <div class="slides-wrap">
+                <div class="image-wrapper">
+                  <img class="lazyload" sizes="220px" data-srcset="assets/images/slider-1.jpg 220w" alt="slider-1 image">
+                </div>
+                <h3 class="slides-title">Beige Coat</h3>
+              </div>
+              <div class="slides-wrap">
+                <div class="image-wrapper">
+                  <img class="lazyload" sizes="220px" data-srcset="assets/images/slider-4.jpg 220w" alt="slider-4 image">
+                </div>
+                <h3 class="slides-title">Grey Coat</h3>
+              </div>
+            </div>
+          </div>
+          <div class="prev"></div>
+          <div class="next"></div>
+        </div>
+      </section>
+    </div><!-- END SLIDER -->
+
+    <!-- FORM SECTION -->
+    <div class="grid">
+      <div class="grid__col-sm--12 grid__col-md--6 grid__col--4">
+
+        <!-- FORM -->
+        <form class="form">
+          <h4 class="form__headline">Login</h4>
+
+          <!-- FIRST NAME -->
+          <div class="grid--fullwidth">
+            <div class="grid__col-sm--4 grid__col-md--4 grid__col--4">
+              <label class="form__label" for="name">
+                First Name<span class="required--star">*</span>
+              </label>
+            </div>
+            <div class="grid__col-sm--8 grid__col-md--8 grid__col--8">
+              <input class="form__input" type="text" placeholder="Enter your first name">
+            </div>
+          </div>
+
+          <!-- LAST NAME -->
+          <div class="grid--fullwidth">
+            <div class="grid__col-sm--4 grid__col-md--4 grid__col--4">
+              <label class="form__label" for="name">
+                Last Name<span class="required--star">*</span>
+              </label>
+            </div>
+            <div class="grid__col-sm--8 grid__col-md--8 grid__col--8">
+              <input class="form__input" type="text" placeholder="Enter your last name">
+            </div>
+          </div>
+
+          <!-- DATE OF BIRTH -->
+          <div class="grid--fullwidth">
+            <div class="grid__col-sm--4 grid__col-md--4 grid__col--4">
+              <label class="form__label" for="name">
+                Date of Birth<span class="required--star">*</span>
+              </label>
+            </div>
+            <div class="grid__col-sm--8 grid__col-md--8 grid__col--8">
+              <input class="form__input" type="date" name="dob" data-placeholder="dd/mm/yyyy" required aria-required="true" />
+            </div>
+          </div>
+
+          <!-- EMAIL -->
+          <div class="grid--fullwidth">
+            <div class="grid__col-sm--4 grid__col-md--4 grid__col--4">
+              <label class="form__label" for="name">
+                E-mail<span class="required--star">*</span>
+              </label>
+            </div>
+            <div class="grid__col-sm--8 grid__col-md--8 grid__col--8">
+              <input class="form__input" type="text" placeholder="Enter your E-Mail address">
+            </div>
+          </div>
+
+          <!-- PASSWORD -->
+          <div class="grid--fullwidth">
+            <div class="grid__col-sm--4 grid__col-md--4 grid__col--4">
+              <label class="form__label" for="name">
+                Password<span class="required--star">*</span>
+              </label>
+            </div>
+            <div class="grid__col-sm--8 grid__col-md--8 grid__col--8">
+              <input class="form__input" type="password" placeholder="Enter your password">
+              <p class="required--text"><span class="required--star">*</span> Required field</p>
+            </div>
+          </div>
+
+          <!-- RADIO BUTTONS -->
+          <div class="grid--fullwidth">
+            <input id="r1" type="radio" class="form__radio-button" name="gender" value="male" checked aria-checked="true">
+            <label class="form__radio-label" for="r1">
+              I am a returning customer
+            </label>
+          </div>
+          <div class="grid--fullwidth">
+            <input type="radio" class="form__radio-button" id="r2" name="gender" value="male">
+            <label class="form__radio-label" for="r2">
+              I am a new customer <br>
+            </label>
+            <span class="form__info">Creating an account is not mandatory</span>
+          </div>
+
+          <!-- SUBMIT BUTTON -->
+          <input class="form__btn btn--default" type="submit" value="Continue with purchase">
+
+        </form><!-- END FORM -->
+      </div>
+
+      <!-- DETAILS -->
+      <div class="grid__col-sm--12 grid__col-md--6 grid__col--8">
+        <div class="details" role="note">
+          <h4 class="details__headline">Benefits of Creating an Account</h4>
+          <p class="details__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat explicabo.</p>
+          <p class="details__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dolor si amet amecurit.</p>
+          <p class="details__content is-hidden-mobile is-hidden-tablet">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div><!-- END DETAILS -->
+    </div><!-- END FORM SECTION -->
+
+    <!-- FOOTER -->
+    <div class="grid">
+      <footer class="footer" role="contentinfo">
+        <div class="footer__newsletter">
+          <h4 class="newsletter-form__title">Receive Our Newsletter</h4>
+          <div class="newsletter-form__form-group">
+            <input class="newsletter-form__input" type="email" name="email" value="" placeholder="Enter your email">
+            <button class="newsletter-form__btn btn--default" type="submit">Go</button>
+          </div>
+        </div>
+        <div class="footer__navigation">
+          <a class="footer__links">Registered Trademark inc. All Rights Reserved</a>
+          <span class="footer__divider">-</span>
+          <a class="footer__links" href="#">Conditions</a>
+          <span class="footer__divider">-</span>
+          <a class="footer__links" href="#">Privacy</a>
+        </div>
+      </footer>
+    </div><!-- END FOOTER -->
+
+    <!-- build:js assets/scripts/App.js -->
+    <script src="/temp/scripts/App.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>

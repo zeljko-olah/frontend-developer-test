@@ -1,0 +1,60 @@
+// ==========================================================================
+// Article
+// ==========================================================================
+
+.article {
+  margin-top: em(42px);
+  @include mq(small) {
+    margin-top: 0;
+  }
+  @include mq(medium) {
+    margin-top: 0;
+  }
+
+  // Headline
+  @include e(headline) {
+    color: $black;
+    letter-spacing: 4px;
+    margin-bottom: em(20px);
+    @include mq(medium) {
+      margin-bottom: em(5px);
+    }
+  }
+
+  // Content
+  @include e(content) {
+    color: $black;
+    @include mq(small) {
+      font-size: em(15px);
+      font-weight: 300;
+    }
+    @include mq(medium) {
+      font-size: em(13px);
+      font-weight: 300;
+    }
+    @include mq(large) {
+      font-size: em(14px);
+    }
+  }
+
+  // List
+  @include e(list) {
+    margin-left: em(72px);
+    margin-bottom: em(30px);
+    & > li {
+      font-weight: 300;
+      font-size: em(15px);
+      padding-bottom: em(6px);
+
+      @include mq(small) {
+        font-size: em(19px);
+      }
+      @include mq(medium) {
+        font-size: em(17px);
+      }
+      @include mq(large) {
+        font-size: em(18px);
+      }
+    }
+  }
+}

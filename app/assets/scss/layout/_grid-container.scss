@@ -1,0 +1,25 @@
+// ==========================================================================
+// Grid Container
+// ==========================================================================
+
+.grid {
+  @extend %clearfix;
+  @extend .centered;
+  width: 90%;
+
+  // Full width grid
+  @include m(fullwidth) {
+    @extend %clearfix;
+    width: 100%;
+  }
+
+  // Make nested grid 100%
+  [class*="grid__col--"] > & {
+    width: 100%;
+  }
+
+  // Set a max-width for grid container
+  @include mq(large) {
+    max-width: $g-cont-max-w;
+  }
+}

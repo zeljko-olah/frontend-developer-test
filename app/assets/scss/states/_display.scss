@@ -1,0 +1,39 @@
+// ==========================================================================
+// Grid display
+// ==========================================================================
+
+// Mobile
+.is-displayed-mobile {
+  @include mq(small) {
+    display: block;
+    @at-root (with: media) {
+      .is-hidden-mobile {
+        display: none;
+      }
+    }
+  }
+  @include mq(medium) {
+    display: none;
+  }
+  @include mq(large) {
+    display: none;
+  }
+}
+
+// Tablet
+.is-displayed-tablet {
+  @include mq(small) {
+    display: none;
+  }
+  @include mq(medium) {
+    display: block;
+    @at-root (with: media) {
+      .is-hidden-tablet {
+        display: none;
+      }
+    }
+  }
+  @include mq(large) {
+    display: none;
+  }
+}

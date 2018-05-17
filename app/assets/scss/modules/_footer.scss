@@ -1,0 +1,76 @@
+// ==========================================================================
+// Footer
+// ==========================================================================
+
+.footer {
+  margin-top: 0;
+  padding-top: 1.2em;
+  margin-bottom: 1em;
+  @include mq(small) {
+    margin-bottom: 1em;
+  }
+  @include mq(medium) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+  }
+  @include mq(large) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0.9em;
+    margin-top: 2.5em;
+    margin-bottom: .5em;
+  }
+
+  // Foter nav
+  @include e(nav) {
+    @include mq(small) {
+      margin-top: em(25px);
+    }
+  }
+
+  // Newsletter holder
+  @include e(newsletter) {
+    @include mq(large) {
+    }
+  }
+
+  // Footer navigation holder
+  @include e(navigation) {
+    @include mq(medium) {
+      order: -1;
+      margin-bottom: 1em;
+      text-align: center;
+    }
+    @include mq(large) {
+      order: -1;
+      margin-bottom: 1em;
+      text-align: center;
+    }
+  }
+
+  // Footer nav links
+  @include e(links) {
+    font-size: em(8px);
+    color: palette(grey, x-light);
+    letter-spacing: 2px;
+
+    @include mq(small) {
+      font-size: em(13px);
+      letter-spacing: 3px;
+    }
+    @include mq(medium) {
+      font-size: em(12px);
+      letter-spacing: $letter-space-sm;
+    }
+  }
+
+  // Dividers
+  @include e(divider) {
+    color: palette(grey, x-light);
+    margin-right: em(15px);
+    margin-left: em(15px);
+  }
+}

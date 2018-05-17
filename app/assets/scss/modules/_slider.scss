@@ -1,0 +1,151 @@
+// ==========================================================================
+// Slider
+// ==========================================================================
+
+.slider {
+  @include mq(large) {
+    margin-bottom: 2em;
+  }
+
+  // Main title
+  @include e(title) {
+    @include mq(small) {
+      font-size: em(22px);
+      font-weight: $font-weight--light;
+      margin-bottom: .8em;
+    }
+    @include mq(large) {
+      font-size: em(22px);
+      font-weight: $font-weight--light;
+      margin-bottom: 1.5em;
+    }
+    @include mq(large) {
+      font-size: em(22px);
+      font-weight: $font-weight--light;
+      margin-bottom: 2em;
+    }
+  }
+
+  // Carousel
+  @include e(carousel-wrapper) {
+    position: relative;
+    width: 530px;
+    margin: 0 auto;
+
+    @include mq(medium) {
+      width: 680px;
+    }
+    @include mq(large) {
+      width: 1060px;
+    }
+    @media (max-width: 600px) {
+      width: 300px;
+    }
+
+    // controls
+    .next::after, .prev::after {
+      content: '❱';
+      position: absolute;
+      right: 0;
+      @media (max-width: 600px) {
+        right: 1em;
+      }
+      top: 45%;
+      @include mq(medium) {
+        top: 40%;
+      }
+      transform: translateY(-50%);
+      background-color: black;
+      width: 1.8em;
+      height: 1.8em;
+      line-height: 1.7em;
+      font-size: 0.8em;
+      text-align: center;
+      font-weight: 900;
+      color: #fff;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.1s linear;
+    }
+
+    .next:hover::after, .prev:hover::after {
+      background-color: palette(grey, x-light);
+    }
+
+    .prev::after {
+      content: '❰ ';
+      left: 0;
+    }
+  }
+
+  // Images holders
+  @include e(image-carousel) {
+    width: 470px;
+    height: 330px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+
+    @include mq(medium) {
+      width: 600px;
+      height: 210px;
+    }
+
+    @include mq(large) {
+      width: 940px;
+      height: 330px;
+    }
+    @media (max-width: 600px) {
+      width: 235px;
+    }
+
+    .inner {
+      display: flex;
+      position: absolute;
+      left: 0;
+      transition: left 0.25s ease-out;
+    }
+
+    .slides-wrap {
+      width: 220px;
+      height: 330px;
+      overflow: hidden;
+      margin-right: 25px;
+      @include mq(medium) {
+        width: 130px;
+        height: 270px;
+      }
+
+      // Slide title
+      .slides-title {
+        font-size: em(18px);
+        text-align: center;
+        font-weight: $font-weight--medium;
+        color: palette(grey, xx-dark);
+        margin-top: 0.2em;
+        @include mq(medium) {
+          margin-top: 0.5em;
+          font-size: em(13px);
+        }
+        @include mq(large) {
+          margin-top: 0.5em;
+          font-size: em(13px);
+        }
+      }
+
+      // Images
+      .image-wrapper {
+        height: 290px;
+        overflow: hidden;
+        @include mq(medium){
+          height: 170px;
+        }
+      }
+
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

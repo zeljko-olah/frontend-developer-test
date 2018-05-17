@@ -1,0 +1,27 @@
+// ==========================================================================
+// Account Bar
+// ==========================================================================
+
+// Login bar
+.account-bar {
+  text-align: right;
+  padding-right: em(16px);
+  margin-top: em(10px);
+
+  // Links
+  @include e(item) {
+    @include doubly(20px);
+    font-size: em(10px);
+    letter-spacing: $letter-space-sm;
+    color: palette(black, light);
+  }
+
+  & > * {
+    display: inline-block;
+  }
+
+  // Hide on mobile
+  @include mq(small)  {
+    display: none;
+  }
+}

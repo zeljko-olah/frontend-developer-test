@@ -1,0 +1,109 @@
+// ==========================================================================
+// Hero
+// ==========================================================================
+
+.hero {
+  @extend %clearfix;
+  color: $white;
+  @include mq(small) {
+    margin-top: em(-10px);
+    @include img-replace("hero--mobile.jpg", 100%, auto);
+    background-size: cover;
+    // Hero height mobile
+    @include e(callout) {
+      height: 330px;
+    }
+  }
+  @include mq(medium) {
+    margin-top: em(-10px);
+    @include img-replace("hero--mobile.jpg", 100%, auto);
+    background-size: cover;
+    // Hero height tablet
+    @include e(callout) {
+      height: 390px;
+    }
+  }
+  @include mq(large) {
+    @include img-replace("hero.jpg", 100%, auto);
+    background-size: cover;
+    // Hero height desktop
+    @include e(callout) {
+      height: 800px;
+    }
+  }
+
+  // Main Headline
+  @include e(headline) {
+    @include mq(small) {
+      font-size: em(40px);
+      font-weight: $font-weight--medium;
+      letter-spacing: $letter-space-lg;
+      margin-top: 0;
+      margin-bottom: em(10px, 40px);
+    }
+    @include mq(medium) {
+      font-size: em(60px);
+      font-weight: $font-weight--medium;
+      letter-spacing: 8px;
+      margin-top: em(30px, 60px);
+      margin-bottom: 0;
+    }
+    @include mq(large) {
+      font-size: em(120px);
+      letter-spacing: 20px;
+      font-weight: $font-weight--medium;
+      margin-top: em(80px, 100px);
+      margin-bottom: - em(40px, 100px);
+    }
+  }
+
+  // Hero subtitle
+  @include e(subtitle) {
+    @include mq(small) {
+      font-size: em(24px);
+      font-weight: $font-weight--medium;
+      letter-spacing: $letter-space-lg;
+      margin-top: 0;
+      margin-bottom: em(5px, 30px);
+      color: $white;
+    }
+    @include mq(medium) {
+      font-size: em(17px);
+      font-weight: $font-weight--medium;
+      letter-spacing: $letter-space-md;
+      margin-top: - em(12px);
+      margin-bottom: - em(5px, 30px);
+      color: $white;
+    }
+    @include mq(large) {
+      font-size: em(30px);
+      font-weight: $font-weight--medium;
+      letter-spacing: 7px;
+      margin-top: em(30px, 30px);
+      margin-bottom: em(2px, 30px);
+      color: $white;
+    }
+  }
+
+  // Hero description
+  @include e(description) {
+    @include mq(small) {
+      font-size: em(17px);
+      font-weight: $font-weight--medium;
+      letter-spacing: 3px;
+      color: $white;
+    }
+    @include mq(medium) {
+      font-size: em(8px);
+      font-weight: $font-weight--medium;
+      letter-spacing: 2px;
+      color: $white;
+    }
+    @include mq(large) {
+      font-size: em(16px);
+      font-weight: $font-weight--medium;
+      letter-spacing: 4px;
+      color: $white;
+    }
+  }
+}

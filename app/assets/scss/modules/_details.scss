@@ -1,0 +1,38 @@
+// ==========================================================================
+// Details
+// ==========================================================================
+
+.details {
+  margin-top: em(25px);
+  padding: em(20px) em(30px) em(5px);
+  background-color: palette(grey, xx-light);
+  @include mq(small) {
+    padding: em(10px) em(30px) em(5px);
+  }
+
+  // Headline
+  @include e(headline) {
+    text-align: center;
+    letter-spacing: $letter-space-md;
+    @include mq(small) {
+      font-size: em(18px);
+      margin-bottom: em(20px, 18px);
+    }
+  }
+
+  // Content
+  @include e(content) {
+    @include mq(small) {
+      font-size: em(15px);
+      margin-bottom: em(10px);
+    }
+    @include mq(medium) {
+      font-size: em(13px);
+      line-height: 1.65;
+    }
+    @include mq(large) {
+      font-size: em(12px);
+      line-height: 1.65;
+    }
+  }
+}

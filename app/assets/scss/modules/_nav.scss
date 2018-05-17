@@ -1,0 +1,28 @@
+// ==========================================================================
+// Nav
+// ==========================================================================
+
+.nav {
+	margin-top: em(20px);
+	margin-bottom: em(25px);
+
+  // Nav items
+  @include e(item) {
+    @extend %nav-item-horz;
+    a {
+      @extend %nav-item-link;
+      &:hover {
+        @extend %nav-item-on;
+      }
+    }
+
+    // Active link
+    @include m(current) {
+      @extend %nav-item-horz;
+      a {
+        @extend %nav-item-link;
+        @extend %nav-item-on;
+      }
+    }
+  }
+}

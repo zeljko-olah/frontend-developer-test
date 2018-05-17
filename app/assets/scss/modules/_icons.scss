@@ -1,0 +1,52 @@
+// ==========================================================================
+// Icons
+// ==========================================================================
+
+// Logo
+
+// Site logo
+.site-logo {
+
+  // Logo headline
+	@include e(headline) {
+		margin-top: - em(10px);
+		margin-bottom: 0;
+		@include mq(small)  {
+			font-size: em(32px);
+			margin-top: em(12px);
+		}
+		@include mq(medium)  {
+			font-size: em(27px);
+			margin-top: em(10px);
+		}
+		@include mq(large)  {
+			margin-top: 0;
+		}
+		@media (max-width: 600px) {
+			font-size: em(15px);
+			margin-top: em(30px);
+			margin-bottom: em(15px);
+			margin-left: em(60px);
+		}
+	}
+}
+
+// Nav Toggle
+.icn {
+
+  // Hamburger icon
+	@include m(nav-toggle) {
+		@extend %icn--ui !optional;
+		width: 40px;
+		height: 30px;
+		position: relative;
+		top: em(-40px);
+		left: em(40px);
+		border-top: solid 3px $black;
+		border-bottom: solid 3px $black;
+		@include p-el(before, 40px, 3px) {
+			background: $black;
+			top: 11px;
+		}
+	}
+}

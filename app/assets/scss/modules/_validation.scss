@@ -1,0 +1,32 @@
+// ==========================================================================
+// Validation
+// ==========================================================================
+
+// Required stars
+.required {
+  @include m(star) {
+    font-size: 15px;
+    color: $monza;
+  }
+}
+
+// Required fields
+.required--text {
+  color: $monza;
+  font-size: 10px;
+  @extend %right-align;
+  @include mq(small) {
+    font-size: em(12px);
+  }
+  @include mq(medium) {
+    margin-top: -10px;
+    font-size: em(9px);
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  @include mq(large) {
+    margin-top: -10px;
+    font-size: em(9px);
+    margin-bottom: 0;
+  }
+}

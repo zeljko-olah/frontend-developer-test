@@ -1,0 +1,56 @@
+// ==========================================================================
+// Products
+// ==========================================================================
+
+.products {
+  @extend .float-right;
+  @extend %clearfix;
+  font-weight: 300;
+
+  // Headline
+  @include e(headline) {
+    @include mq(medium) {
+      font-size: em(22px);
+      margin-top: em(8px);
+      margin-bottom: em(8px);
+    }
+    @include mq(large) {
+      font-size: em(22px);
+      // margin-top: em(8px);
+      // margin-bottom: em(8px);
+    }
+  }
+
+  // Product title
+  @include e(title) {
+    @extend %center-align;
+    @include mq(small) {
+      margin-bottom: 0;
+    }
+    @include mq(medium) {
+      margin-bottom: 0;
+    }
+  }
+
+  // Price
+  @include e(price-container) {
+    @extend %center-align;
+  }
+
+  @include e(price) {
+    @extend %center-align;
+    @include doubly(5px);
+    font-weight: $font-weight--medium;
+  }
+
+  // Old price
+  @include e(old-price) {
+    font-size: em(14px);
+    text-decoration: line-through;
+  }
+
+  // New Price
+  @include e(new-price) {
+    color: $monza;
+  }
+}

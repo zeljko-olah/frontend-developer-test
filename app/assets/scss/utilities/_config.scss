@@ -1,0 +1,92 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+
+$font-url--google        : 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
+$font-family--primary    : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Font Weights
+
+$font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 900;
+
+// Descriptive Base Colors
+
+$white : #fff;
+$black : #000;
+$grey  : #676767;
+
+// { name that color site }
+$monza          : #D70826;
+$silver         : #c2c1c1;
+
+// Color Usage
+
+$color-primary   : $black;
+$color-secondary : $silver;
+$color-shadow    : rgba($black, .2);
+
+// Color Palette Modifiers
+
+$color-palettes: (
+	grey: (
+		xx-light : lighten($grey, 51%),
+		x-light  : lighten($grey, 35%),
+	  light    : lighten($grey, 12%),
+	  base     : $grey,
+	 	dark     : darken($grey, 8%),
+	 	x-dark   : darken($grey, 16%)
+	),
+	black: (
+		base     : $black,
+		light    : lighten($black, 10%),
+		x-light  : lighten($black, 43%)
+	)
+);
+
+// UI Colors
+
+$ui-colors: (
+	default : $black,
+	error   : $monza,
+);
+
+// Text
+
+$base__font-size : 16px;
+$base__line      : 24px;
+$letter-space-lg : 7px;
+$letter-space-md : 4px;
+$letter-space-sm : 1px;
+
+// Border radius
+
+$br--default    : .2em;
+$br--round      : 50%;
+
+// Transitions
+
+$trns-duration  : .3s;
+
+// Path to Assets
+
+$path--rel      : "../../assets/images/";
+
+// Grid
+
+$g-col-width    : 65px;
+$g-gutter-width : 20px;
+$g-col-count    : 12;
+$g-cont-max-w   : 1296px;
+
+// Breakpoints
+
+$brkpoint-sm    : 1px;
+$brkpoint-md    : 768px;
+$brkpoint-lg    : 1100px;
