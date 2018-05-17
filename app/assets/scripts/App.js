@@ -44,9 +44,9 @@ $('nav li').click(function(){
   }
 
   // on resize reload to boot the slider
-  window.addEventListener('resize', function(event){
-    location.reload();
-  })
+  // window.addEventListener('resize', function(event){
+  //   location.reload();
+  // })
 
   // change images by modifying inner div left property
   function switchImg() {
